@@ -8,7 +8,7 @@ function AuthorName() {
   const [namelist, setNameList] = useState([])
   const [error, setError] = useState('')
 
-  const alphabetRegex = /^[a-zA-Z]+$/
+  const alphabetRegex = /^[a-zA-Z ]*$/
 
   const handleInput = (e) => {
     setAuthorName(e.target.value)
