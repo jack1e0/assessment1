@@ -21,7 +21,7 @@ function AuthorName() {
       setError("Only alphabetic letters allowed!")
     }
 
-    else if (authorName.length > 128) {
+    else if (authorName.length > 70) {
       setError("Name too long!")
     }
 

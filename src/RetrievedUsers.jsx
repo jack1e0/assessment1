@@ -61,40 +61,41 @@ function RetrievedUsers() {
         </div>
         
         <div className='display'>
-          {users ? 
+          <div className='userContainer'>
+            {users ? 
           
-          <ol>
-            {users.map((user, index) => (
-              <li key={index}>
-                <strong>Name:</strong> {user.name}<br/>
-                <strong>Username:</strong> {user.username}<br/>
-                <strong>Email:</strong> {user.email}<br/>
-                <strong>Address:</strong> 
-                  
-                  <ul>
-                    <li><strong>City:</strong> {user['address.city']}<br/></li>
-                    <li><strong>Street:</strong> {user['address.street']}<br/></li>
-                    <li><strong>Suite:</strong> {user['address.suite']}<br/></li>
-                    <li><strong>Zipcode:</strong> {user['address.zipcode']}<br/></li>
-                    <li><strong>Geo (longitude by latitude):</strong> {user['address.geo.lng']}, {user['address.geo.lat']}<br/></li>
-                  </ul>
+              <ol>
+                  {users.map((user, index) => (
+                  <li key={index}>
+                      <strong>Name:</strong> {user.name}<br/>
+                      <strong>Username:</strong> {user.username}<br/>
+                      <strong>Email:</strong> {user.email}<br/>
+                      <strong>Address:</strong> 
+                      
+                      <ul>
+                          <li><strong>City:</strong> {user['address.city']}<br/></li>
+                          <li><strong>Street:</strong> {user['address.street']}<br/></li>
+                          <li><strong>Suite:</strong> {user['address.suite']}<br/></li>
+                          <li><strong>Zipcode:</strong> {user['address.zipcode']}<br/></li>
+                          <li><strong>Geo (longitude by latitude):</strong> {user['address.geo.lng']}, {user['address.geo.lat']}<br/></li>
+                      </ul>
 
-                <strong>Phone:</strong> {user.phone}<br/>
-                <strong>Website:</strong> {user.website}<br/>
-                <strong>Company:</strong> 
+                      <strong>Phone:</strong> {user.phone}<br/>
+                      <strong>Website:</strong> {user.website}<br/>
+                      <strong>Company:</strong> 
 
-                  <ul>
-                    <li><strong>Name:</strong> {user['company.name']}<br/></li>
-                    <li><strong>Catchphrase:</strong> {user['company.catchPhrase']}<br/></li>
-                    <li><strong>Business:</strong> {user['company.bs']}<br/></li>
-                  </ul>
+                      <ul>
+                          <li><strong>Name:</strong> {user['company.name']}<br/></li>
+                          <li><strong>Catchphrase:</strong> {user['company.catchPhrase']}<br/></li>
+                          <li><strong>Business:</strong> {user['company.bs']}<br/></li>
+                      </ul>
 
-              </li>
-            ))}
-          </ol>
+                  </li>
+                  ))}
+              </ol>
           
-          : <p>{error}</p>}
-          
+            : <p>{error}</p>}
+          </div>
         </div>
       </div>
     </>

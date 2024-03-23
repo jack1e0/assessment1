@@ -1,6 +1,6 @@
 .app {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   margin: 0;
   box-sizing: border-box;
   padding: 2rem;
@@ -9,18 +9,19 @@
 
 .authorName {
   flex: 1;
-  border-radius: 50px;
+  border-radius: 40px;
   background-color: rgba(115, 153, 124, 0.829);
   height: 100%;
   box-sizing: border-box;
-  padding: 2rem;
-  padding-left: 4rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .authorName input {
   width: 60%;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   margin-left: 0;
   border-radius: 12px;
   border: none;
@@ -36,13 +37,14 @@
   flex: 1;
   display: flex;
   flex-flow: column;
-  gap: 1.5rem;
+  gap: 1rem;
   height: 100%;
   box-sizing: border-box;
 }
 
 .output {
-  height: 70%;
+  height: 68%;
+  overflow-y: auto;
 }
 
 .output p {
@@ -51,16 +53,16 @@
 
 .names {
   margin: 0em;
-  height: 80%;
-  overflow-y: auto;
+  height: auto;
 }
 
 .instructions {
-  flex: 0.3;
-  border-radius: 50px;
+  flex: 3;
+  border-radius: 40px;
   background-color: rgba(242, 248, 163, 0.897);
-  padding: 2rem;
-  padding-left: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 
 .instructions h1 {
@@ -68,18 +70,23 @@
 }
 
 .display {
-  flex: 0.7;
-  border-radius: 50px;
+  flex: 7;
+  box-sizing: border-box;
+  height: 65%;
+  border-radius: 40px;
   background-color: rgba(255, 255, 255, 0.575);
   padding: 2rem;
-  padding-left: 4rem;
-  height: 55%;
+  padding-left: 1.5vw;
 }
 
-.display ol {
-  margin: 0em;
+.userContainer {
   height: 100%;
   overflow-y: auto;
+}
+
+.userContainer ol {
+  margin: 0em;
+  height: auto;
 }
 
 .display p, li {
