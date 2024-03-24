@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// Retrieves users by doing API calls
+// Retrieves users by doing API call
 
 function RetrievedUsers() {
 
@@ -35,8 +35,6 @@ function RetrievedUsers() {
 
       var usersData = await response.json()
       var usersObj = usersData.map(user => FlattenJSON(user));
-
-      console.log(usersObj[0]['address.city'])
 
       setUsers(usersObj)
       setError(null)
